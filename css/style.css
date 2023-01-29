@@ -1,0 +1,12 @@
+.grid-container {
+  display: grid;
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+nav {
+  grid-area: navigation;
+}
