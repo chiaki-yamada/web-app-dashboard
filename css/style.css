@@ -24,6 +24,11 @@ h3 {
   font-size: 0.5rem;
 }
 
+.alert, section {
+  width: 90%;
+  margin: auto
+}
+
 /*  header  */
 header h1 {
   margin-right: auto;
@@ -94,6 +99,31 @@ main {
 .widget-container-full, .widget-container-half {
   width: 95vw;
 }
+
+/* alert*/
+.alert {
+  margin: 15px auto;
+
+}
+.alert-banner {
+  font-size: 0.8rem;
+  color: aliceblue;
+  background-color: steelblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
