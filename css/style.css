@@ -24,12 +24,31 @@ h3 {
   font-size: 0.5rem;
 }
 
-.alert, section {
+.alert, .container {
   width: 90%;
-  margin: auto
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-/*  header  */
+section {
+  border-bottom: 1px solid;
+  border-color: darkgray;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.widget-container-full, .widget-container-half {
+  width: 95vw;
+  margin-top: 25px;
+}
+
+
+/* --------------- header  ---------------*/
 header h1 {
   margin-right: auto;
 }
@@ -46,7 +65,7 @@ header svg {
 header {
   grid-area: header;
   height: 70px;
-  background-color: steelblue;
+  background-color: #7477BF;
 }
 .header {
   display: flex;
@@ -57,7 +76,7 @@ header {
 }
 
 
-/* nav */
+/* ---------------nav---------------*/
 nav svg {
   height: 30px;
 }
@@ -81,7 +100,7 @@ nav {
 }
 
 
-/* main-header*/
+/* ---------------main-header---------------*/
 main {
   display: grid;
   grid-area: main;
@@ -96,26 +115,44 @@ main {
   width: 110px;
   padding: 15px;
 }
-.widget-container-full, .widget-container-half {
-  width: 95vw;
-}
 
-/* alert*/
-.alert {
-  margin: 15px auto;
-
-}
+/* ---------------alert---------------*/
 .alert-banner {
   font-size: 0.8rem;
   color: aliceblue;
-  background-color: steelblue;
+  background-color: #7477BF;
   display: flex;
   justify-content: space-between;
   padding: 10px;
   border-radius: 5px;
 }
 
+/* ---------------traffic---------------*/
+.traffic-header ul {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
 
+
+/* ---------------social stats-------------*/
+.social-container {
+  display: flex;
+  padding: 20px 10px;
+  background-color: #d8d9ff;
+  border: 1px solid;
+  border-color: lightgray;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.social-media-icon {
+  width: 30px;
+  fill: white;
+}
+.social-media-icon {
+  margin-right: 15px;
+}
 
 
 
