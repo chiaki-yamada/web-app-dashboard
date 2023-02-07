@@ -35,6 +35,10 @@ section {
   border-bottom: 1px solid;
   border-color: darkgray;
 }
+section:last-child {
+  border: none;
+}
+
 li {
   list-style: none;
 }
@@ -139,23 +143,110 @@ main {
 /* ---------------social stats-------------*/
 .social-container {
   display: flex;
-  padding: 20px 10px;
+  padding: 10px;
   background-color: #d8d9ff;
   border: 1px solid;
-  border-color: lightgray;
+  border-color: dimgrey;
   border-radius: 10px;
   margin-top: 10px;
+  align-items: center;
 }
 .social-media-icon {
   width: 30px;
   fill: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
-.social-media-icon {
+
+.media-name {
+  color: #7477BF;
+}
+.stats{
+  font-size: 2rem;
+  color: dimgrey;
+}
+
+.social-img {
+  background: #7477BF;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  position: relative;
   margin-right: 15px;
 }
 
 
+/* ---------------members-------------*/
+.member-container {
+  border-bottom: 1px solid;
+  border-color: darkgray;
+  text-align: center;
+  padding: 15px;
+}
+.member-container:last-child {
+  border: none;
+}
+.member-container img {
+  border-radius: 50%;
+  width: 60px;
+}
+.member-info {
+  font-size: 0.8rem;
+}
+.member-info a {
+  color: #7477BF;
+}
 
+
+/* ---------------activity-------------*/
+.activity-container {
+  border-bottom: 1px solid;
+  border-color: darkgray;
+  text-align: center;
+  padding: 15px;
+}
+.activity-container:last-child {
+  border: none;
+}
+.activity-container img {
+  border-radius: 50%;
+  width: 60px;
+}
+.activity-info {
+  font-size: 0.8rem;
+}
+
+
+/* ---------------message-------------*/
+.form-field {
+  width: 100%;
+  background-color: aliceblue;
+  border: 1px solid;
+  border-color: lightgray;
+  border-radius: 8px;
+  padding: 9px;
+  margin-top: 10px;
+}
+.form-area {
+  width: 100%;
+  background-color: aliceblue;
+  border: 1px solid;
+  border-color: lightgray;
+  border-radius: 8px;
+  padding: 9px;
+  margin-top: 10px;
+}
+.button-primary {
+  width: 100%;
+  background-color: #7477BF;
+  color: white;
+  border-color: lightgray;
+  border-radius: 8px;
+  padding: 9px;
+  margin-top: 10px;
+}
 
 
 
