@@ -240,34 +240,16 @@
     <section class="settings">
       <div class="container">
         <h2>SETTINGS</h2>
-        <div class="setting-switch">
-          <div class="switch1">
-            <label class="switch-light switch-candy" onclick="">
-              <input type="checkbox">
-              <strong>Send Email Notifications</strong>
-
-              <span>
-                <span>On</span>
-                <span>Off</span>
-                <a href=""></a>
-              </span>
-            </label>  
-          </div>
-
-          <div class="switch2">
-            <label class="switch-light switch-candy" onclick="">
-              <input type="checkbox">
-              <strong>Set Profile to Public</strong>
-
-              <span>
-                <span>On</span>
-                <span>Off</span>
-                <a href=""></a>
-              </span>
-            </label>  
-          </div>
+        <div class="setting-item">
+          <p class="toggle-text">Send Email Notifications</p>
+          <input id="toggle-switch" type="checkbox" name="toggle-switch">
         </div>
 
+        <div class="setting-item">
+          <p class="toggle-text">Set Profile to Public</p>
+          <input id="toggle-switch" type="checkbox" name="toggle-switch">
+        </div>
+              
         <select class="form-field" id="timezone">
           <option disabled selected>Select a Timezone</option>
           <option>PST</option>

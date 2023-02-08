@@ -139,7 +139,6 @@ main {
   margin-top: 10px;
 }
 
-
 /* ---------------social stats-------------*/
 .social-container {
   display: flex;
@@ -172,7 +171,6 @@ main {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  display: flex;
   position: relative;
   margin-right: 15px;
 }
@@ -242,15 +240,92 @@ main {
   width: 100%;
   background-color: #7477BF;
   color: white;
-  border-color: lightgray;
+  border: 1px solid lightgray;
   border-radius: 8px;
   padding: 9px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 
+/* ---------------settings-------------*/
 
+.toggle-text {
+  font-size: 0.9rem;
+}
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
 
+#toggle-switch {
+  -webkit-appearance: none;
+  position: relative;
+  width: 80px;
+  height: 30px;
+  border-radius: 25px;
+  transition: ease-out .3s;
+  background-color: #7477BF;
+  outline: solid 1px rgb(185, 185, 185);
+  cursor: pointer;
+}
+
+#toggle-switch::before {
+  content: 'ON';
+  font-size: 0.9rem;
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+#toggle-switch:checked:before {
+  content: 'OFF';
+  font-size: 0.9rem;
+  color: white;
+  top: 25%;
+  left: 50%;
+}
+
+#toggle-switch::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 78%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  height: 1.3rem;
+  width: 1.3rem;
+  background-color: white;
+  outline: solid 1px rgb(185, 185, 185);
+}
+
+#toggle-switch:checked {
+  background-color: rgb(185, 185, 185);
+}
+
+#toggle-switch:checked:after {
+  left: 22%;
+}
+
+.form-field {
+  margin-top: 30px;
+}
+.setting-button {
+  display: flex;
+  justify-content: space-between;
+}
+.button-dosabled {
+  width: 100%;
+  background-color: rgb(185, 185, 185);
+  color: white;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 9px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
 
 
 
