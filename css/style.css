@@ -49,6 +49,7 @@ a {
 .widget-container-full, .widget-container-half {
   width: 95vw;
   margin-top: 25px;
+  
 }
 
 
@@ -56,16 +57,40 @@ a {
 header h1 {
   margin-right: auto;
 }
+header h3 {
+  margin-left: 10px;
+}
 header img {
-  height: 45px;
+  height: 40px;
   border-radius: 50%;
+  margin-left: 3px;
 }
 header svg {
-  width: 25px;
+  width: 23px;
+}
+.bell-icon {
+  position: relative;
+  margin-right: 10px;
+  padding: 0 15px;
+  border-right: .1px solid lightsteelblue;
+  
+}
+.notifications {
+  background: greenyellow;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  position: relative;
+  margin-left: auto;
 }
 .bell {
   fill: aliceblue;
+  transition: .3s;
 }
+.bell:hover {
+  transform: rotate(-25deg) scale(1.1);
+}
+
 header {
   grid-area: header;
   height: 70px;
@@ -78,6 +103,7 @@ header {
   height: 70px;
   color: aliceblue;
 }
+
 
 
 /* ---------------nav---------------*/
@@ -112,12 +138,18 @@ main {
 .main-header {
   display: flex;
   height: 50px;
-  background-color: lightgray;
 }
 .headline {
   background-color: white;
   width: 110px;
   padding: 15px;
+  align-self: center;
+}
+.tab {
+  width: 100%;
+  background-color: aliceblue;
+  border-bottom: 1px solid lightgray;
+  border-left: 1px solid lightgray;
 }
 
 /* ---------------alert---------------*/
@@ -136,7 +168,13 @@ main {
   display: flex;
   justify-content: space-around;
   font-size: 0.9rem;
-  margin-top: 10px;
+  margin-top: 15px;
+}
+.traffic-header a:hover {
+  color: white;
+  padding: 10px 15px;
+  background-color: lightgreen;
+  border-radius: 50%;
 }
 
 /* ---------------social stats-------------*/
