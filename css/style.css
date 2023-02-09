@@ -285,7 +285,6 @@ main {
 
 
 /* ---------------settings-------------*/
-
 .toggle-text {
   font-size: 0.9rem;
 }
@@ -295,7 +294,6 @@ main {
   align-items: center;
   margin-top: 30px;
 }
-
 #toggle-switch {
   -webkit-appearance: none;
   position: relative;
@@ -307,7 +305,6 @@ main {
   outline: solid 1px rgb(185, 185, 185);
   cursor: pointer;
 }
-
 #toggle-switch::before {
   content: 'ON';
   font-size: 0.9rem;
@@ -316,7 +313,6 @@ main {
   top: 25%;
   left: 10%;
 }
-
 #toggle-switch:checked:before {
   content: 'OFF';
   font-size: 0.9rem;
@@ -324,7 +320,6 @@ main {
   top: 25%;
   left: 50%;
 }
-
 #toggle-switch::after {
   content: '';
   position: absolute;
@@ -337,15 +332,12 @@ main {
   background-color: white;
   outline: solid 1px rgb(185, 185, 185);
 }
-
 #toggle-switch:checked {
   background-color: rgb(185, 185, 185);
 }
-
 #toggle-switch:checked:after {
   left: 22%;
 }
-
 .form-field {
   margin-top: 30px;
 }
@@ -372,14 +364,33 @@ main {
 @media (min-width: 768px) {
 
   .grid-container {
-    grid-template-columns: 55px 1fr;
-    grid-template-areas:
-     "header" "header"
-     "navigation" "main";
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 70px auto;
+  }
+  header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  nav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    height: 100%;
+  }
+  .nav-icons {
+    height: 100%;
+    display: block;
+    margin-left: 15px;
+  }
+  .nav-icon {
+    margin-top: 15px;
   }
 
   main {
-    grid-template-columns: 1fr;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
   }
   .traffic, .social-stats, .members, .activity, .message, .settings {
     grid-column: 1 / span 2;
