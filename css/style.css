@@ -367,10 +367,14 @@ main {
     grid-template-columns: 60px 1fr;
     grid-template-rows: 70px auto;
   }
+
+/*-------------header---------------*/
   header {
     grid-column-start: 1;
     grid-column-end: 3;
   }
+
+  /*-------------navigation---------------*/
   nav {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -387,10 +391,16 @@ main {
     margin-top: 15px;
   }
 
+
+  /*-------------main---------------*/
   main {
     grid-column-start: 2;
     grid-column-end: 3;
-
+  }
+  
+  .main-header, .alert {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
   .traffic, .social-stats, .members, .activity, .message, .settings {
     grid-column: 1 / span 2;
@@ -408,7 +418,53 @@ main {
   .widget-container-half {
     width: 45vw;
   }
+  /*-------------traffic--------------*/
+  .traffic-text {
+    display: flex;
+    align-items: center;
+  }
+  .traffic-header {
+    margin-left: auto;
+  }
+  .traffic-header ul {
+    margin-top: 0;
+  }
+  .traffic-header li {
+    margin-left: 20px;
+  }
+  /*-------------daily--------------*/
+  .daily {
+    border-right: 1px solid lightgray;
+  }
+  /*-----------social stats------------*/
+  .social-containers {
+    display: flex;
+    
+  }
+  /*-------------members--------------*/
+  
+  .member-container, .activity-container {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 20px 0;
+  }
+  .member-container img, .activity-container img {
+    margin-right: 15px;
+  }
+  .member-info {
+    display: flex;
+  }
+  .info-1 {
+    text-align: left;
+  }
+  .info-2 {
+    margin-left: auto;
+  }
 }
+
+
+
+
 
 
 @media (min-width: 1024px) {
