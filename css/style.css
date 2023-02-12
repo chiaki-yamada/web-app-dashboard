@@ -504,19 +504,16 @@ main {
   .alert, .container {
     width: 95%;
   }
-
-
+  .members .container, .activity .container, .message .container, .settings .container {
+    padding: 5px 15px; 
+  }
+ 
   /* social stats */ 
   .social-container {
     width: 32%;
   }
   
   /* members */
-  .members .container, .activity .container{
-    padding: 5px 15px;
-    
-  }
-  
   .members, .message {
     border-right: 1px solid lightgray;
   }
@@ -529,4 +526,6 @@ main {
     margin-left: 20px;
     margin-right: 20px;
   }
+  
+
 }
