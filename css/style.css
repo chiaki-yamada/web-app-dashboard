@@ -464,7 +464,6 @@ main {
     margin-left: auto;
   }
   
-
   /* activity */
   .activity-info {
     text-align: left;
@@ -474,15 +473,10 @@ main {
     margin-left: auto;
   }
   
-
-
-
   /* settings */
   .setting-item {
     margin-right: 335px;
   }
-
-
 }
 
 
@@ -491,15 +485,7 @@ main {
 
 
 @media (min-width: 1024px) {
-  .grid-container {
-    grid-template-columns: 55px 1fr;
-    grid-template-areas:
-     "header" "header"
-      "navigation" "main";
-  }
-  main{
-    grid-template-columns: 1fr;
-  }
+
   .traffic, .social-stats {
     grid-column: 1 / span 2;
   }
@@ -514,5 +500,33 @@ main {
   }
   .widget-container-half {
     width: 45vw;
+  }
+  .alert, .container {
+    width: 95%;
+  }
+
+
+  /* social stats */ 
+  .social-container {
+    width: 32%;
+  }
+  
+  /* members */
+  .members .container, .activity .container{
+    padding: 5px 15px;
+    
+  }
+  
+  .members, .message {
+    border-right: 1px solid lightgray;
+  }
+  /* activity */ 
+  .activity-info {
+    width: 70%;
+    overflow-wrap: normal;
+  }
+  .activity .container {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
