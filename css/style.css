@@ -233,6 +233,9 @@ main {
 .member-info a {
   color: #7477BF;
 }
+.info-date {
+  font-size: 0.8rem;
+}
 
 
 /* ---------------activity-------------*/
@@ -367,14 +370,17 @@ main {
     grid-template-columns: 60px 1fr;
     grid-template-rows: 70px auto;
   }
+  .daily .container, .mobile-users .container {
+    width: 80%;
+  }
 
-/*-------------header---------------*/
+/* header */
   header {
     grid-column-start: 1;
     grid-column-end: 3;
   }
 
-  /*-------------navigation---------------*/
+  /* navigation */
   nav {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -392,7 +398,7 @@ main {
   }
 
 
-  /*-------------main---------------*/
+  /* main */
   main {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -418,7 +424,7 @@ main {
   .widget-container-half {
     width: 45vw;
   }
-  /*-------------traffic--------------*/
+  /* traffic */
   .traffic-text {
     display: flex;
     align-items: center;
@@ -432,17 +438,17 @@ main {
   .traffic-header li {
     margin-left: 20px;
   }
-  /*-------------daily--------------*/
+  /* daily */
   .daily {
     border-right: 1px solid lightgray;
   }
-  /*-----------social stats------------*/
+  /* social stats */
   .social-containers {
     display: flex;
+    justify-content: space-between;
     
   }
-  /*-------------members--------------*/
-  
+  /* members */
   .member-container, .activity-container {
     display: flex;
     align-items: center;
@@ -452,14 +458,31 @@ main {
     margin-right: 15px;
   }
   .member-info {
-    display: flex;
-  }
-  .info-1 {
     text-align: left;
   }
-  .info-2 {
+  .info-date {
     margin-left: auto;
   }
+  
+
+  /* activity */
+  .activity-info {
+    text-align: left;
+  }
+  .activity-container::after {
+    content: ">";
+    margin-left: auto;
+  }
+  
+
+
+
+  /* settings */
+  .setting-item {
+    margin-right: 335px;
+  }
+
+
 }
 
 
