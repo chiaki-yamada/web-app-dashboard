@@ -495,6 +495,9 @@ main {
   .mobile-users, .activity, .settings  {
     grid-column: 2 / span 1;
   }
+  .daily .container, .mobile-users .container {
+    width: 90%;
+  }
   .widget-container-full {
     width: 90vw;
   }
@@ -517,15 +520,22 @@ main {
   .members, .message {
     border-right: 1px solid lightgray;
   }
+
   /* activity */ 
   .activity-info {
-    width: 70%;
-    overflow-wrap: normal;
+    overflow-wrap: break-word;
   }
-  .activity .container {
-    margin-left: 20px;
+  /* message */
+  textarea {
+    height: 105px;
+  }
+
+  /* setting */
+  .toggle-text {
+    width: 200px;
     margin-right: 20px;
   }
+  
   
 
 }
