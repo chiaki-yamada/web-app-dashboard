@@ -486,6 +486,16 @@ main {
 
 @media (min-width: 1024px) {
 
+  main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  
+  .main-header, .alert {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
   .traffic, .social-stats {
     grid-column: 1 / span 2;
   }
@@ -510,17 +520,15 @@ main {
   .members .container, .activity .container, .message .container, .settings .container {
     padding: 5px 15px; 
   }
- 
+  
   /* social stats */ 
   .social-container {
     width: 32%;
   }
-  
   /* members */
   .members, .message {
     border-right: 1px solid lightgray;
   }
-
   /* activity */ 
   .activity-info {
     overflow-wrap: break-word;
@@ -529,7 +537,6 @@ main {
   textarea {
     height: 105px;
   }
-
   /* setting */
   .toggle-text {
     width: 200px;
